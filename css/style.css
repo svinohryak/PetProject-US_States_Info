@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-field {
+    display: block;
+    margin: 10px auto;
+}
+
+.state-card {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.state-card::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.state-name {
+    text-align: center;
+
+}
+
+.state-card ul {
+    z-index: 5;
+}
+
+.state-card li {
+    list-style: none;
+    text-shadow: 1px 1px 2px black, -1px 1px 2px black, 0 0 5px black;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: .1rem;
+}
+
+.state-card h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 2px black, -1px 1px 2px black, 0 0 3px black;
+    color: white;
+    z-index: 5;
+}
+
+#flag-btn {
+    align-self: center;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 5;
+
+}
+
+#find-button {
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 15;
+}
+
+.image-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-flag-btn {
+    position: absolute;
+    /* right: -2.5rem;
+    top: -3rem; */
+    right: 0;
+    top: -0.6rem;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#big-flag {
+    max-width: 600px;
+}
